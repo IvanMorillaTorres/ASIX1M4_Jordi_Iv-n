@@ -11,6 +11,17 @@ background-size:cover;
 background-image: url('../IMG/fondo_general.jpg');
 background-size:cover;
 }
+<<<<<<< HEAD
+=======
+.iniciojuego{
+  font-family: Minecraft;
+}
+.end{
+  /* font-family: 'Minecraft';
+  src: url(../Fonts/minecraft_font.ttf); */
+}
+
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
 body {
   color: white;
   text-align: center;
@@ -41,6 +52,7 @@ button a {
 aqui los css de la parte la pantalla de dificultad
 .menudificultad {
   display: flex;
+<<<<<<< HEAD
 width: 100%;
 display: flex;
 background-color: #45a049;
@@ -53,6 +65,14 @@ background-color: #45a049;
 body{
   background-color: aqua;
 }
+=======
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
 .menudificultad button {
   padding: 10px 20px;
   margin: 10px;

@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<?php 
+if(!isset($_POST['correcto1'])) {
+    header("location: ../Pantallasminijuegos/pregunta1.php?error=2");
+?>
+>>>>>>> 1f469fd1e1a666aca7b4d3ffe5a39feb46713a2b
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +23,10 @@
     <div>    
         <?php
 session_start();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
 if(isset($_REQUEST['correcto1'])){
     $_SESSION['dificultad'] = $_POST['dificultad'];
     $_SESSION['nivel'] = $_POST['nivel'];
@@ -54,6 +68,64 @@ if($_SESSION['dificultad']=="dificil" ||$_SESSION['nivel'] == 2 ){
 
 
          ?>
+<<<<<<< HEAD
+=======
+=======
+    $_SESSION['dificultad'] = $_POST['dificultad'];
+    if($_SESSION['nivel'] == 2){
+        if($_SESSION['dificultad']=="dificil"){
+            
+            ?>
+            <h4>Como es la pregunta 1?</h4>
+            <form action="../PHP/validacion.php" method="post">
+                <div><button name='incorrecto2'>bonita</button></div>
+                <div><button name='incorrecto2'>amarila</button></div>
+                <div><button name='incorrecto2'>roja</button></div>
+                <div><button name='correcto2'>marron</button></div>
+                <button> </button>
+            </form>
+        <?php 
+        session_start();
+        }elseif($_SESSION['dificultad']=="bestia"){
+            ?>
+            <form action="../PHP/validacion.php" method="post">
+            <h4>Como es la pregunta de dificil?</h4>
+                <div><button name='incorrecto2'>bonita</button></div>
+                <div><button name='incorrecto2'>amarila</button></div>
+                <div><button name='incorrecto2'>roja</button></div>
+                <div><button name='correcto2'>marron</button></div>
+            </form>
+        <?php 
+        session_start();
+        }elseif($_SESSION['dificultad']=="leyenda"){
+            ?>
+            <form action="../PHP/validacion.php" method="post">
+            <h4>Como es la pregunta 1 de dificil y el color?</h4>
+                <div><button name='incorrecto2'>fea</button></div>
+                <div><button name='incorrecto2'>rojita</button></div>
+                <div><button name='incorrecto2'>nefjvnlef</button></div>
+                <div><button name='correcto2'>vrvrvrvr</button></div>
+            </form>
+        <?php 
+        }
+    }
+}
+
+$error=$_GET['error'];
+if(isset($_GET['error'])){
+    if ($error == "1"){
+    echo "Has fallado la respuesta de la segunda pregunta, toca volver para atras";
+    }
+}
+if(isset($_GET['error'])){
+    if ($error == "2"){
+    echo "No te saltaras las pantallas";
+    }
+}
+ 
+ ?>
+>>>>>>> 1f469fd1e1a666aca7b4d3ffe5a39feb46713a2b
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
     </div>
     
 </body>

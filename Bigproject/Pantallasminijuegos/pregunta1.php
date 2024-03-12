@@ -13,6 +13,10 @@
     <div>    
         <?php
 session_start();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
 if(isset($_POST['enviarnivel'])){
     $_SESSION['dificultad'] = $_POST['dificultad'];
     $_SESSION['nivel'] = $_POST['nivel'];
@@ -20,6 +24,22 @@ if(isset($_POST['enviarnivel'])){
 if($_SESSION['dificultad']=="dificil"||$_SESSION['nivel'] == 1){
     ?>
     <form action="../PHP/validacion.php" method="post">
+<<<<<<< HEAD
+=======
+=======
+if(isset($_POST['submitrespuesta'])){
+    $_SESSION['dificultad'] = $_POST['dificultad'];
+    $_SESSION['nivel'] = 1;
+};
+if($_SESSION['dificultad']=="dificil"){
+    ?>
+    <form action="../PHP/validacion.php" method="post">
+        <?php 
+        session_start();
+        $_SESSION['dificultad']="dificil";
+        ?>
+>>>>>>> 1f469fd1e1a666aca7b4d3ffe5a39feb46713a2b
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
     <h4>Como es la pregunta 1?</h4>
     <div><button name='incorrecto1'>bonita</button></div>
     <div><button name='incorrecto1'>amarila</button></div>
@@ -27,15 +47,34 @@ if($_SESSION['dificultad']=="dificil"||$_SESSION['nivel'] == 1){
     <div><button name='correcto1'>marron</button></div>
 <?php 
 
+<<<<<<< HEAD
 
 }elseif($_SESSION['dificultad']=="bestia"||$_SESSION['nivel'] == 1){
+=======
+<<<<<<< HEAD
+
+}elseif($_SESSION['dificultad']=="bestia"||$_SESSION['nivel'] == 1){
+=======
+session_start();
+}elseif($_SESSION['dificultad']=="bestia"){
+>>>>>>> 1f469fd1e1a666aca7b4d3ffe5a39feb46713a2b
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
     ?><h4>Como es la pregunta de dificil?</h4>
     <div><button name='incorrecto1'>bonita</button></div>
     <div><button name='incorrecto1'>amarila</button></div>
     <div><button name='incorrecto1'>roja</button></div>
     <div><button name='correcto1'>marron</button></div>
 <?php 
+<<<<<<< HEAD
 }elseif($_SESSION['dificultad']=="leyenda"||$_SESSION['nivel'] == 1){
+=======
+<<<<<<< HEAD
+}elseif($_SESSION['dificultad']=="leyenda"||$_SESSION['nivel'] == 1){
+=======
+session_start();
+}elseif($_SESSION['dificultad']=="leyenda"){
+>>>>>>> 1f469fd1e1a666aca7b4d3ffe5a39feb46713a2b
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
     ?><h4>Como es la pregunta 1 de dificil y el color?</h4>
     <div><button name='incorrecto1'>fea</button></div>
     <div><button name='incorrecto1'>rojita</button></div>
@@ -45,12 +84,21 @@ if($_SESSION['dificultad']=="dificil"||$_SESSION['nivel'] == 1){
 <?php 
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
 if(isset($_GET['error'])){
     $error=$_POST['error'];
     if ($error == "1"){
 echo "Has fallado la respuesta de la segunda pregunta, toca volver para atras";
 }
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1f469fd1e1a666aca7b4d3ffe5a39feb46713a2b
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
          ?>
     </div>
     

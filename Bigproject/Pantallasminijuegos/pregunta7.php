@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Honk&family=Kanit&display=swap" rel="stylesheet">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
     <title>Pregunta 4</title>
 </head>
 <body>
@@ -49,6 +53,54 @@ if($_SESSION['dificultad']=="dificil" ||$_SESSION['nivel'] == 7 ){
     </form>
 <?php 
 }
+<<<<<<< HEAD
+=======
+=======
+    <title>Pregunta 1</title>
+</head>
+<body>
+    
+    <div>
+        <?php
+session_start();
+if(isset($_POST['submitrespuesta'])) {
+    $_SESSION['dificultad'] = $_POST['dificultad'];
+    $_SESSION['pregunta_actual'] = 1;
+};
+
+
+// if(isset($_POST['submit'])) {
+//     $_SESSION['dificultad'] = $_POST['dificultad'];
+//     $_SESSION['pregunta_actual'] = 2;
+// };
+// if(isset($_POST['submit'])) {
+//     $_SESSION['dificultad'] = $_POST['dificultad'];
+//     $_SESSION['pregunta_actual'] = 3;
+// };
+// if(isset($_POST['submit'])) {
+//     $_SESSION['dificultad'] = $_POST['dificultad'];
+//     $_SESSION['pregunta_actual'] = 4;
+// };
+// if(isset($_POST['submit'])) {
+//     $_SESSION['dificultad'] = $_POST['dificultad'];
+//     $_SESSION['pregunta_actual'] = 5;
+// };
+// if(isset($_POST['submit'])) {
+//     $_SESSION['dificultad'] = $_POST['dificultad'];
+//     $_SESSION['pregunta_actual'] = 6;
+// };
+// if(isset($_POST['submit'])) {
+//     $_SESSION['dificultad'] = $_POST['dificultad'];
+//     $_SESSION['pregunta_actual'] = 7;
+// };
+// if(isset($_POST['submit'])) {
+//     $_SESSION['dificultad'] = $_POST['dificultad'];
+//     $_SESSION['pregunta_actual'] = 8;
+// };
+
+
+>>>>>>> 1f469fd1e1a666aca7b4d3ffe5a39feb46713a2b
+>>>>>>> c8364a5017c1535c46abc1a9a312f611bad26233
 
 
          ?>
